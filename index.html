@@ -18,64 +18,89 @@
 	<script src="js/bootstrap.min.js"></script>
 	<!-- Timeline CSS -->
 	<link rel="stylesheet" href="css/timeline.css">
+	<!-- Custom styles for this template -->
+	<link href="css/navbar-fixed-top.css" rel="stylesheet">
 
 </head>
 
 <body>
-	
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Benoit Lubrano di Sbaraglione</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+					<li><a href="profile.html">Gaming Profile</a></li>
+					<li><a href="CV.pdf">CV LaTeX</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#contact" data-toggle="collapse">Contact</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+
+
 	<div class="container">
-      <div class="masthead">
-      	<h3 class="text-muted">Benoit Lubrano di Sbaraglione</h3>
-      	<nav>
-      		<ul class="nav nav-justified">
-      			<li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-      			<li><a href="Projects.html">Projets</a></li>
-      			<li><a href="profile.html">Gaming Profile</a></li>
-      			<li><a href="Contact.html">Contact</a></li>
-      			<li><a href="CV.pdf">CV LaTeX</a></li>
-      		</ul>
-      	</nav>
-      </div>
 
-      <!-- Jumbotron -->
-      <div class="jumbotron">
-      	<h1>Stage BDE ESIEE Paris</h1>
-      	<p class="lead">Bonjour, je suis actuellement en 2ème année à l'ESIEE Paris. Mon CV est disponible en cliquant sur le bouton ci-dessous !</p>
-      	<p><a class="btn btn-lg btn-success" href="#CV" data-toggle="collapse">Afficher mon CV</a></p>
-      </div>
+		<!-- Jumbotron -->
+		<div class="jumbotron">
+			<h1>Stage BDE ESIEE Paris</h1>
+			<p class="lead">Bonjour, je suis actuellement en 2ème année à l'ESIEE Paris. 
+				Mon CV est disponible ci-dessous !</p>
+				<!-- <p><a class="btn btn-primary btn-lg" href="#CV" data-toggle="collapse">Afficher mon CV</a></p> -->
+			</div>
+			<div id="contact" class="collapse" style="text-align:center"> 
+				<div class="well">
+					<address>
+						<strong>Contact</strong><br>
+						10, allée de la Grande Ferme<br>
+						77600 Bussy Saint-Georges<br>
+						<abbr title="Téléphone"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></abbr> <a href="callto:0671419854">06 71 41 98 54 </a>
+					</address>
 
-      <div id="CV" class="collapse" style="text-align:center"> 
-      	<h1> </h1>
-      	<h4> 10, allée de la Grande Ferme, 77600 Bussy Saint-Georges </h4>
-      	<h4> <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>06 71 41 98 54 <span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> benoit.lds@gmail.com <span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span> Né le 19/01/1994 </h4>
+					<address>
+						<abbr title="Adresse email"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></abbr> <a href="mailto:benoit.lds@gmail.com">benoit.lds@gmail.com</a>
+					</address>
+				</div>
+			</div>
 
-      	<div class="row">
-      		<div class="col-lg-4">
-      			<h2>Informatique</h2>
-      			<p>La formation ESIEE Paris permet d'acquérir de bonnes bases dans divers languages de programmation tels que Java ou C et de description tels que VHDL. </p>
-      			<div class="col-md-11">
-      				<b>C et C++</b><div class="progress">
-      				<div style="width: 70%;" class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100">Bonnes bases
-      				</div>
-      			</div>
-      			<b>Java</b><div class="progress">
-      			<div style="width: 60%;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100">Bonnes bases
-      			</div>
-      		</div>
-      		<b>Assembleur ARM Cortex M3</b><div class="progress">
-      		<div style="width: 50%;" class="progress-bar progress-bar-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé en projet
-      		</div>
-      	</div>
-      	<b>Python</b><div class="progress">
-      	<div style="width: 60%;" class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé en projet
-      	</div>
-      </div>
-      <b>Arduino</b><div class="progress">
-      <div style="width: 40%;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé en projet
-      </div>
-  </div>
-</div>
-<p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+			<div id="CV" class="collapse in">
+				<div class="row">
+					<div class="col-lg-4">
+						<h2>Informatique</h2>
+						<p>La formation ESIEE Paris permet d'acquérir de bonnes bases dans divers languages de programmation tels que Java ou C et de description tels que VHDL. </p>
+						<div class="col-md-11">
+							<b>C et C++</b><div class="progress">
+							<div style="width: 70%;" class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100">Bonnes bases
+							</div>
+						</div>
+						<b>Java</b><div class="progress">
+						<div style="width: 60%;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100">Bonnes bases
+						</div>
+					</div>
+					<b>Assembleur ARM Cortex M3</b><div class="progress">
+					<div style="width: 50%;" class="progress-bar progress-bar-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé en projet
+					</div>
+				</div>
+				<b>Python</b><div class="progress">
+				<div style="width: 60%;" class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé en projet
+				</div>
+			</div>
+			<b>Arduino</b><div class="progress">
+			<div style="width: 40%;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé en projet
+			</div>
+		</div>
+	</div>
 </div>
 <div class="col-lg-4">
 	<h2>Outils</h2>
@@ -104,7 +129,7 @@
 </div>
 </div>
 </div>
-<p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+
 </div>
 <div class="col-lg-4">
 	<h2>Langues</h2>
@@ -127,13 +152,13 @@
 <div style="width: 30%;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100">1 ans scolaire
 </div>
 </div>
-<p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+
 </div>
 </div>
 </div>
 <div class="container">
-	<div class="page-header">
-		<h1 id="timeline">Cursus scolaire</h1>
+	<div class="page-header" style="text-align:center">
+		<h1 id="timeline">Mon parcours<br></h1>
 		<p>Année en cours : 2ème année ESIEE Paris</p>
 	</div>
 	<ul class="timeline">
@@ -142,7 +167,7 @@
 			<div class="timeline-panel">
 				<div class="timeline-heading">
 					<h4 class="timeline-title">E2</h4>
-					<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Septembre 2014 - Juin 2015</small></p>
+					<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Septembre 2014 - Juin 2015</small></p>
 				</div>
 				<div class="timeline-body">
 					<p>Cette année a été très enrichissante pour ma formation professionnelle.</p>
@@ -154,7 +179,7 @@
 			<div class="timeline-panel">
 				<div class="timeline-heading">
 					<h4 class="timeline-title">Stage dans l'assistance informatique</h4>
-					<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Juillet-Aout 2014</small></p>
+					<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Juillet-Aout 2014</small></p>
 				</div>
 				<div class="timeline-body">
 					<p>J’ai été assigné à une équipe de l’assistance informatique dont le rôle est de résoudre les problèmes
@@ -169,7 +194,7 @@
 			<div class="timeline-panel">
 				<div class="timeline-heading">
 					<h4 class="timeline-title">E1</h4>
-					<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Septembre 2013 - Juin 2014</small></p>
+					<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Septembre 2013 - Juin 2014</small></p>
 				</div>
 				<div class="timeline-body">
 					<p>Cette année s'est bien déroulée grâce à mes acquis lors de l'année précédente.</p>
@@ -192,22 +217,12 @@
 			<div class="timeline-panel">
 				<div class="timeline-heading">
 					<h4 class="timeline-title">Obtention du BAC S</h4>
+					<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2012</small></p>
 				</div>
 				<div class="timeline-body">
-					<p>Baccalauréat Scientifique, option SVT, Spécialité Physique-Chimie. 2009–2012
-					Mention "Bien".</p>
+					<p>Baccalauréat Scientifique, option SVT, Spécialité Physique-Chimie.
+						Mention "Bien".</p>
 						<hr>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="timeline-badge default"><i class="glyphicon glyphicon-arrow-left"></i></div>
-				<div class="timeline-panel">
-					<div class="timeline-heading">
-						<h4 class="timeline-title">Collège Les Sang-Dragons</h4>
-					</div>
-					<div class="timeline-body">
-						<p>Ma dernière année fut aussi celle avant que ce collège soit déplacé.</p>
 					</div>
 				</div>
 			</li>
@@ -216,7 +231,7 @@
 				<div class="timeline-panel">
 					<div class="timeline-heading">
 						<h4 class="timeline-title">Naissance</h4>
-						<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>19 janvier 1994</small></p>
+						<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 19 janvier 1994</small></p>
 					</div>
 					<div class="timeline-body">
 						<p>Bon, tout le monde est né un jour, et moi aussi.</p>
