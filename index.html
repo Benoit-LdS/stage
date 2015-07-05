@@ -1,256 +1,323 @@
-		<!DOCTYPE html>
-		<html lang="fr" >    
+<!DOCTYPE html>
+<html lang="fr" >
 
-		<head>
-			<title>Benoit LdS - CV</title>
+<head>
+	<title>Benoit LdS - CV</title>
 
-			<meta charset="utf-8" />
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<!-- Latest compiled and minified CSS -->
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-			<!-- Optional theme -->
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-			<!-- Timeline CSS -->
-			<link rel="stylesheet" href="css/timeline.css">
-			<!-- Custom styles for this template -->
-			<link href="css/navbar-fixed-top.css" rel="stylesheet">
-			<!-- Modal CSS -->
-			<link href="css/modal.css" rel="stylesheet">
-			<!-- Main CSS -->
-			<link href="css/main.css" rel="stylesheet">
-		</head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<!-- Timeline CSS -->
+	<link rel="stylesheet" href="css/timeline.css">
+	<!-- Custom styles for this template -->
+	<link href="css/navbar-fixed-top.css" rel="stylesheet">
+	<!-- Modal CSS -->
+	<link href="css/modal.css" rel="stylesheet">
+	<!-- Main CSS -->
+	<link href="css/main.css" rel="stylesheet"></head>
 
-		<body>
-			<!-- Fixed navbar -->
-			<nav class="navbar navbar-default navbar-fixed-top">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
+<body>
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="">Benoit Lubrano di Sbaraglione</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li>
+						<a class="scrollTo" href="#home">
+							<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						</a>
+					</li>
+					<li>
+						<a class="scrollTo" href="#competences">Compétences</a>
+					</li>
+					<li>
+						<a class="scrollTo" href="#parcours">Parcours</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="profile.html">Gaming Profile</a>
+					</li>
+					<li>
+						<a href="CV.pdf">CV LaTeX</a>
+					</li>
+					<li>
+						<a href="#contact" data-toggle="modal">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</nav>
+
+	<div class="container" id="home">
+
+		<!-- Jumbotron -->
+		<div class="jumbotron" style="margin:50px 0 50px 0">
+			<h1>Stage BDE ESIEE Paris</h1>
+			<p class="lead">
+				Bonjour, je suis actuellement en 2ème année à l'ESIEE Paris. Mon CV est disponible ci-dessous !
+			</p>
+			<!--<p>
+				<a class="btn btn-primary btn-lg" href="#CV" data-toggle="collapse">Afficher mon CV</a>
+			</p>-->
+		</div>
+
+		<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">&times;</span>
+							<span class="sr-only">Fermer</span>
 						</button>
-						<a class="navbar-brand" href="">Benoit Lubrano di Sbaraglione</a>
+						<h1 class="modal-title">Contact</h1>
 					</div>
-					<div id="navbar" class="navbar-collapse collapse">
-						<ul class="nav navbar-nav">
-							<li><a class="scrollTo" href="#home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-							<li><a class="scrollTo" href="#competences">Compétences</a></li>
-							<li><a class="scrollTo" href="#parcours">Parcours</a></li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="profile.html">Gaming Profile</a></li>
-							<li><a href="CV.pdf">CV LaTeX</a></li>
-							<li><a href="#contact" data-toggle="modal">Contact</a></li>
-						</ul>
-					</div><!--/.nav-collapse -->
-				</div>
-			</nav>
+					<div class="modal-body">
+						<address> <strong>Adresse</strong>
+							<br>
+							10, allée de la Grande Ferme
+							<br>
+							77600 Bussy Saint-Georges
+							<br> <abbr title="Téléphone"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></abbr> 
+							<a href="callto:0671419854">06 71 41 98 54</a>
+						</address>
 
-
-			<div class="container" id="home">
-
-				<!-- Jumbotron -->
-				<div class="jumbotron" style="margin:50px 0 50px 0">
-					<h1>Stage BDE ESIEE Paris</h1>
-					<p class="lead">Bonjour, je suis actuellement en 2ème année à l'ESIEE Paris. 
-						Mon CV est disponible ci-dessous !</p>
-						
-						<!-- <p><a class="btn btn-primary btn-lg" href="#CV" data-toggle="collapse">Afficher mon CV</a></p> -->
+						<address> <abbr title="Adresse email"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></abbr> 
+							<a href="mailto:benoit.lds@gmail.com">benoit.lds@gmail.com</a>
+						</address>
 					</div>
-
-					<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fermer</span></button>
-									<h1 class="modal-title">Contact</h1>
-								</div>
-								<div class="modal-body">
-									<address>
-										<strong>Adresse</strong><br>
-										10, allée de la Grande Ferme<br>
-										77600 Bussy Saint-Georges<br>
-										<abbr title="Téléphone"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></abbr> <a href="callto:0671419854">06 71 41 98 54 </a>
-									</address>
-
-									<address>
-										<abbr title="Adresse email"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></abbr> <a href="mailto:benoit.lds@gmail.com">benoit.lds@gmail.com</a>
-									</address>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-								</div>
-							</div>
-						</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
 					</div>
-				</div>
-
-				<div id="competences" class="vspace shadowbox"></div>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4">
-							<h2>Informatique</h2>
-							<p>La formation ESIEE Paris permet d'acquérir de bonnes bases dans divers languages de programmation tels que Java ou C et de description tels que VHDL. </p>
-							<div class="col-md-11">
-								<b>C et C++</b><div class="progress">
-								<div style="width: 70%;" class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100">Bonnes bases
-								</div>
-							</div>
-							<b>Java</b><div class="progress">
-							<div style="width: 60%;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100">Bonnes bases
-							</div>
-						</div>
-						<b>Assembleur ARM Cortex M3</b><div class="progress">
-						<div style="width: 50%;" class="progress-bar progress-bar-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé en projet
-						</div>
-					</div>
-					<b>Python</b><div class="progress">
-					<div style="width: 60%;" class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé en projet
-					</div>
-				</div>
-				<b>Arduino</b><div class="progress">
-				<div style="width: 40%;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé en projet
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="col-md-4">
-		<h2>Outils</h2>
-		<p>J'ai utilisé de nombreux outils afin de mettre en pratique les sujets abordés lors de ma formation.</p>
-		<br>
-		<div class="col-md-11">
-			<b>Suite Office 2010</b><div class="progress">
-			<div style="width: 70%;" class="progress-bar progress-bar-sucess" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé couramment
-			</div>
-		</div>
-		<b>Windows 8.1 et 10</b><div class="progress">
-		<div style="width: 90%;" class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé couramment
-		</div>
-	</div>
-	<b>Overleaf</b><div class="progress">
-	<div style="width: 80%;" class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé couramment
-	</div>
-</div>
-<b>Debian Server</b><div class="progress">
-<div style="width: 40%;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100">Bonnes bases
-</div>
-</div>
 
-<b>Eclipse (IDE)</b><div class="progress">
-<div style="width: 50%;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé en projet
-</div>
-</div>
-</div>
-
-</div>
-<div class="col-md-4">
-	<h2>Langues</h2>
-	<p>Originaire de la Réunion, j'ai pu voyager dans différents pays dont certains anglophones comme Singapour et l'Ile Maurice.</p>
-	<div class="col-md-11">
-		<b>Français</b><div class="progress">
-		<div style="width: 100%;" class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100">Langue Native
-		</div>
-	</div>
-	<b>Anglais</b><div class="progress">
-	<div style="width: 70%;" class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100">Compétence professionnelle limitée
-	</div>
-</div>
-<b>Espagnol</b><div class="progress">
-<div style="width: 40%;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100">Débutant scolaire
-</div>
-</div>
-<b>Chinois Mandarin</b><div class="progress">
-<div style="width: 30%;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100">1 ans scolaire
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-
-<div id="parcours" class="vspace shadowbox"></div>
-
-<div class="container">
+	<div id="competences" class="vspace shadowbox"></div>
 	<div class="container">
-		<div class="page-header" style="text-align:center">
-			<h1 id="timeline">Mon parcours</h1>
-			<p>Année en cours : 2ème année ESIEE Paris</p>
+		<div class="row">
+			<div class="col-md-4">
+				<h2>Informatique</h2>
+				<p>
+					La formation ESIEE Paris permet d'acquérir de bonnes bases dans divers languages de programmation tels que Java ou C et de description tels que VHDL.
+				</p>
+				<div class="col-md-11"> <b>C et C++</b>
+					<div class="progress">
+						<div style="width: 70%;" class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100">Bonnes bases</div>
+					</div> <b>Java</b>
+					<div class="progress">
+						<div style="width: 60%;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100">Bonnes bases</div>
+					</div>
+					<b>Assembleur ARM Cortex M3</b>
+					<div class="progress">
+						<div style="width: 50%;" class="progress-bar progress-bar-danger" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé en projet</div>
+					</div>
+					<b>Python</b>
+					<div class="progress">
+						<div style="width: 60%;" class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé en projet</div>
+					</div>
+					<b>Arduino</b>
+					<div class="progress">
+						<div style="width: 40%;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé en projet</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h2>Outils</h2>
+				<p>
+					J'ai utilisé de nombreux outils afin de mettre en pratique les sujets abordés lors de ma formation.
+				</p>
+				<br>
+				<div class="col-md-11">
+					<b>Suite Office 2010</b>
+					<div class="progress">
+						<div style="width: 70%;" class="progress-bar progress-bar-sucess" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé couramment</div>
+					</div>
+					<b>Windows 8.1 et 10</b>
+					<div class="progress">
+						<div style="width: 90%;" class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé couramment</div>
+					</div>
+					<b>Overleaf</b>
+					<div class="progress">
+						<div style="width: 80%;" class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé couramment</div>
+					</div>
+					<b>Debian Server</b>
+					<div class="progress">
+						<div style="width: 40%;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100">Bonnes bases</div>
+					</div>
+
+					<b>Eclipse (IDE)</b>
+					<div class="progress">
+						<div style="width: 50%;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100">Utilisé en projet</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-4">
+				<h2>Langues</h2>
+				<p>
+					Originaire de la Réunion, j'ai pu voyager dans différents pays dont certains anglophones comme Singapour et l'Ile Maurice.
+				</p>
+				<div class="col-md-11">
+					<b>Français</b>
+					<div class="progress">
+						<div style="width: 100%;" class="progress-bar progress-bar-info" role="progressbar" aria-valuemin="0" aria-valuemax="100">Langue Native</div>
+					</div>
+					<b>Anglais</b>
+					<div class="progress">
+						<div style="width: 70%;" class="progress-bar progress-bar-success" role="progressbar" aria-valuemin="0" aria-valuemax="100">Compétence professionnelle limitée</div>
+					</div>
+					<b>Espagnol</b>
+					<div class="progress">
+						<div style="width: 40%;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100">Débutant scolaire</div>
+					</div>
+					<b>Chinois Mandarin</b>
+					<div class="progress">
+						<div style="width: 30%;" class="progress-bar progress-bar-warning" role="progressbar" aria-valuemin="0" aria-valuemax="100">1 ans scolaire</div>
+					</div>
+
+				</div>
+			</div>
 		</div>
-		<ul class="timeline">
-			<li>
-				<div class="timeline-badge info"><i class="glyphicon glyphicon-hand-left"></i></div>
-				<div class="timeline-panel">
-					<div class="timeline-heading">
-						<h4 class="timeline-title">E2</h4>
-						<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Septembre 2014 - Juin 2015</small></p>
+	</div>
+
+	<div id="parcours" class="vspace shadowbox"></div>
+
+	<div class="container">
+		<div class="container">
+			<div class="page-header" style="text-align:center">
+				<h1 id="timeline">Mon parcours</h1>
+				<p>Année en cours : 2ème année ESIEE Paris</p>
+			</div>
+			<ul class="timeline">
+				<li>
+					<div class="timeline-badge info"> <i class="glyphicon glyphicon-hand-left"></i>
 					</div>
-					<div class="timeline-body">
-						<p>Cette année a été très enrichissante pour ma formation professionnelle.</p>
-					</div>
-				</div>
-			</li>
-			<li class="timeline-inverted">
-				<div class="timeline-badge warning"><i class="glyphicon glyphicon-chevron-right"></i></div>
-				<div class="timeline-panel">
-					<div class="timeline-heading">
-						<h4 class="timeline-title">Stage dans l'assistance informatique</h4>
-						<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Juillet-Aout 2014</small></p>
-					</div>
-					<div class="timeline-body">
-						<p>J’ai été assigné à une équipe de l’assistance informatique dont le rôle est de résoudre les problèmes
-							éventuels que peuvent rencontrer les autres employés du bâtiment. Dans un second temps, j’ai été
-							chargé d’effectuer la première installation sur de nouvelles machines.
-						</p>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="timeline-badge danger"><i class="glyphicon glyphicon-eye-open"></i></div>
-				<div class="timeline-panel">
-					<div class="timeline-heading">
-						<h4 class="timeline-title">E1</h4>
-						<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Septembre 2013 - Juin 2014</small></p>
-					</div>
-					<div class="timeline-body">
-						<p>Cette année s'est bien déroulée grâce à mes acquis lors de l'année précédente.</p>
-					</div>
-				</div>
-			</li>
-			<li class="timeline-inverted">
-				<div class="timeline-badge default"><i class="glyphicon glyphicon-home"></i></div>
-				<div class="timeline-panel">
-					<div class="timeline-heading">
-						<h4 class="timeline-title">Classes préparatoires CPE Lyon</h4>
-					</div>
-					<div class="timeline-body">
-						<p>Le niveau scientifique requis était un peu trop élevé par rapport à mes acquis du lycée, cependant j'en garde une bonne expérience qui m'a permis d'obtenir des méthodes de travail efficaces.</p>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class="timeline-badge default"><i class="glyphicon glyphicon-home"></i></div>
-				<div class="timeline-panel">
-					<div class="timeline-heading">
-						<h4 class="timeline-title">Obtention du BAC S</h4>
-						<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2012</small></p>
-					</div>
-					<div class="timeline-body">
-						<p>Baccalauréat Scientifique, option SVT, Spécialité Physique-Chimie.
-							Mention "Bien".</p>
-							<hr>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title">E2</h4>
+							<p>
+								<small class="text-muted"> <i class="glyphicon glyphicon-time"></i>
+									Septembre 2014 - Juin 2015
+								</small>
+							</p>
+						</div>
+						<div class="timeline-body">
+							<p>
+								Cette année a été très enrichissante pour ma formation professionnelle.
+							</p>
 						</div>
 					</div>
 				</li>
 				<li class="timeline-inverted">
-					<div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+					<div class="timeline-badge warning">
+						<i class="glyphicon glyphicon-chevron-right"></i>
+					</div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title">Stage dans l'assistance informatique</h4>
+							<p>
+								<small class="text-muted">
+									<i class="glyphicon glyphicon-time"></i>
+									Juillet-Aout 2014
+								</small>
+							</p>
+						</div>
+						<div class="timeline-body">
+							<p>
+								J’ai été assigné à une équipe de l’assistance informatique dont le rôle est de résoudre les problèmes
+							éventuels que peuvent rencontrer les autres employés du bâtiment. Dans un second temps, j’ai été
+							chargé d’effectuer la première installation sur de nouvelles machines.
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge danger">
+						<i class="glyphicon glyphicon-eye-open"></i>
+					</div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title">E1</h4>
+							<p>
+								<small class="text-muted">
+									<i class="glyphicon glyphicon-time"></i>
+									Septembre 2013 - Juin 2014
+								</small>
+							</p>
+						</div>
+						<div class="timeline-body">
+							<p>
+								Cette année s'est bien déroulée grâce à mes acquis lors de l'année précédente.
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="timeline-inverted">
+					<div class="timeline-badge default">
+						<i class="glyphicon glyphicon-home"></i>
+					</div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title">Classes préparatoires CPE Lyon</h4>
+						</div>
+						<div class="timeline-body">
+							<p>
+								Le niveau scientifique requis était un peu trop élevé par rapport à mes acquis du lycée, cependant j'en garde une bonne expérience qui m'a permis d'obtenir des méthodes de travail efficaces.
+							</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge default">
+						<i class="glyphicon glyphicon-home"></i>
+					</div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h4 class="timeline-title">Obtention du BAC S</h4>
+							<p>
+								<small class="text-muted">
+									<i class="glyphicon glyphicon-time"></i>
+									2012
+								</small>
+							</p>
+						</div>
+						<div class="timeline-body">
+							<p>
+								Baccalauréat Scientifique, option SVT, Spécialité Physique-Chimie.
+							Mention "Bien".
+							</p>
+							<hr></div>
+					</div>
+				</li>
+				<li class="timeline-inverted">
+					<div class="timeline-badge success">
+						<i class="glyphicon glyphicon-thumbs-up"></i>
+					</div>
 					<div class="timeline-panel">
 						<div class="timeline-heading">
 							<h4 class="timeline-title">Naissance</h4>
-							<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 19 janvier 1994</small></p>
+							<p>
+								<small class="text-muted">
+									<i class="glyphicon glyphicon-time"></i>
+									19 janvier 1994
+								</small>
+							</p>
 						</div>
 						<div class="timeline-body">
 							<p>Bon, tout le monde est né un jour, et moi aussi.</p>
@@ -260,22 +327,22 @@
 			</ul>
 		</div>
 
+		<!-- Site footer -->
+		<footer class="footer">
+			<p>
+				&copy; Site créé lors de mon stage au BDE ESIEE Paris en 2015
+			</p>
+		</footer>
+		
 	</div>
-
-	<!-- Site footer -->
-	<footer class="footer">
-		<p>&copy; Site créé lors de mon stage au BDE ESIEE Paris en 2015</p>
-	</footer>
-
-</div>
-
-<!-- Scripts at end of page -->
-<!-- JQuery Core JavaScript -->
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-<!-- Smooth Scrolling -->
-<script src="js/scroll.js"></script>
+	<!-- Scripts at end of page -->
+	<!-- JQuery Core JavaScript -->
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Smooth Scrolling -->
+	<script src="js/scroll.js"></script>
 </body>
+
 </html>
