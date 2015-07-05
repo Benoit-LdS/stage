@@ -1,8 +1,12 @@
-$(document).ready(function() {
-		$('.scrollTo').click( function() { // Au clic sur un élément
-			var page = $(this).attr('href'); // Page cible
-			var speed = 700; // Durée de l'animation (en ms)
-			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-			return false;
-		});
-	});
+$(document).ready(function () {
+     $('a[href^="#"]').on('click', function (e) {
+         e.preventDefault();
+
+         var target = this.hash,
+             $target = $(target);
+
+         $('html, body').stop().animate({
+             'scrollTop': $target.offset().top - 50
+         }, 900, 'swing');
+     });
+ });
