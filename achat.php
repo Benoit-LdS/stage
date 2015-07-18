@@ -6,12 +6,7 @@
 </head>
 
 <body>
-	<p>Bonjour !</p>
-		Prénom :<?php echo strip_tags(htmlentities($_POST['prenom'])); ?>. <br>
-		Nom :<?php echo strip_tags(htmlentities($_POST['nom'])); ?>.<br>
-		Adresse :<?php echo strip_tags(htmlentities($_POST['adresse'])); ?>.<br>
-		Numéro de téléphone :<?php echo strip_tags(htmlentities($_POST['num'])); ?>.<br>
-		Changement d'infos ? <a href="formulaire.php">cliquez ici</a> pour revenir à la page du formulaire.
+	<p>Bonjour ! Voici les produits actuellement disponibles :</p>
 <p>
 <?php
 try
@@ -52,7 +47,8 @@ $reponse->closeCursor();
 <!-- Page footer -->
 		<footer class="footer">
 			<p>
-				Votre adresse ip est : <?php print_r($_SERVER['REMOTE_ADDR']) ?> . Je pourrais vous retrouvez si vous tentez de pirater ce site.
+				Votre adresse ip est : <?php print_r($_SERVER['REMOTE_ADDR']) ?> . Je pourrais vous retrouvez si vous tentez de pirater ce site. <br>
+				<a href="formulaire.php">Cliquez ici</a> pour revenir à la page du formulaire. <br>
 			</p>
 		</footer>
 	
