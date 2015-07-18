@@ -10,6 +10,8 @@ Projet Curriculum Vitae - Branche CV
 # Semaine 2 : 6 Juillet - 12 Juillet : Plateforme d'achat
 - Projet PHP/SQL - Branche PHP
 
+Live : http://46.101.250.245/formulaire.php
+
 Une plateforme d'achat simple devra être codé en HTML5 et PHP. Ce projet devra comporter 4 pages :
 - Récupération du Nom, Prénom, Adresse et Numéro de téléphone du client
 - Affichage de 5 articles au choix, un article comprend une image, un prix HT, un prix TTC, une quantité.
