@@ -5,34 +5,37 @@
 	<title>Formulaire client</title>
 </head>
 <body>
+
 	<p>
-		Bonjour, infos please. Balancez le XSS héhé !<br />
-		Prénom :
+		Bonjour, infos please !<br />
 	</p>
 	<form action="achat.php" method="post">
 		<p>
-			<input type="text" name="prenom" />
+			Prénom :
+		</p>
+		<p>
+			<input type="text" name="prenom"/>
 		</p>
 		<p>
 			Nom :
 		</p>
 		<p>
-			<input type="text" name="nom" />
+			<input type="text" name="nom"/>
 		</p>
 		<p>
 			Adresse :
 		</p>
 		<p>
-			<input type="text" name="adresse" />
+			<input type="text" name="adresse"/>
 		</p>
 		<p>
 			Numéro de téléphone:
 		</p>
 		<p>
-			<input type="text" name="num" />
+			<input type="text" name="num"/>
 		</p>
 		<p>
-			<input type="submit" value="Valider" />
+			<input type="submit" name="envoi" value="Valider" />
 		</p>
 	</form>
 </body>

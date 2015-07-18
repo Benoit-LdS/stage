@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Page d'achat</title>
+	<title>Page de panier</title>
 </head>
 
 <body>
@@ -27,21 +27,25 @@ $reponse = $bdd->query('SELECT * FROM articles');
 
 while ($donnees = $reponse->fetch())
 {
+if($_POST['objet']==$donnees['nom'])
+{
 ?>
     <p>
-    <strong>Objet à vendre</strong> : <?php echo $donnees['nom']; ?><br />
+    <strong>Vous voulez acheter</strong> : <?php echo $donnees['nom']; ?><br />
     Prix : <?php echo $donnees['prix']; ?> euros.<br />
-    Quantité restante :  <?php echo $donnees['quantite']; ?>.<br />
-    <form action="panier.php" method="post">
+    <form action="facture.php" method="post">
     <input type="hidden" name="prenom" value="<?php echo $_POST['prenom']; ?>"/>
     <input type="hidden" name="nom" value="<?php echo $_POST['nom']; ?>"/>
     <input type="hidden" name="adresse" value="<?php echo $_POST['adresse']; ?>"/>
     <input type="hidden" name="num" value="<?php echo $_POST['num']; ?>"/>
     <input type="hidden" name="objet" value="<?php echo $donnees['nom']; ?>"/>
-    <input type="submit" name="envoi" value="Acheter" />
+    <input type="hidden" name="prix" value="<?php echo $donnees['prix']; ?>"/>
+    <input type="submit" name="envoi" value="Payer" />
     </form>
    </p>
+
 <?php
+}
 }
 
 $reponse->closeCursor();
