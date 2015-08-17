@@ -29,3 +29,8 @@ Contraintes : Interdiction de sauvegarder l'utilisateur dans la base de données
 - Articles avec contenu et date, au moins 5 articles d'exemple, gérés par la base de donnée.
 - Panel admin pour créer un article à l'aide d'un formulaire.
 - Options du panel admin : créer, modifier, supprimer un article.
+
+# Semaines 8 : 18 Août - 23 Août : Backend SnapMe (https://github.com/kevin-ta/SnapMe) 
+- Création du Backend SnapMe (Utiliser un fork pour faire les modifs)
+- Pagination des photos
+- Possibilité de supprimer les photos, de les télécharger séparément ou ensemble via un panel admin avec mot de passe
